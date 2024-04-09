@@ -1,0 +1,95 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --inter: "Inter", sans-serif;
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--off-black);
+  font-family: var(--inter);
+}
+
+.container {
+  background-color: var(--dark-grey);
+  max-width: 335px;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 16px;
+}
+
+.img {
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+.name {
+  margin-top: 1.5rem;
+}
+
+.location {
+  color: var(--green);
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.occupation {
+  margin: 2rem 0;
+}
+
+.link {
+  background-color: var(--grey);
+  color: var(--white);
+  display: block;
+  border: none;
+  width: 100%;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.link:hover {
+  background-color: var(--green);
+  color: var(--grey);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 420px;
+    padding: 2.5rem;
+  }
+}
