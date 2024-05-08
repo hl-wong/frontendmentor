@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <img src="images/logo.svg" />
+          <ul class="nav-list">
+            <li class="nav-item">
+              <p class="angle-arrow active">
+                Features
+                <img src="images/icon-arrow-down.svg" class="icon-arrow" />
+              </p>
+              <div class="sub-menu-container features">
+                <ul class="sub-menu">
+                  <li class="sub-item">
+                    <img src="images/icon-todo.svg" /> Todo List
+                  </li>
+                  <li class="sub-item">
+                    <img src="images/icon-calendar.svg" /> Calendar
+                  </li>
+                  <li class="sub-item">
+                    <img src="images/icon-reminders.svg" /> Reminders
+                  </li>
+                  <li class="sub-item">
+                    <img src="images/icon-planning.svg" /> Planning
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <p class="angle-arrow active">
+                Company
+                <img src="images/icon-arrow-down.svg" class="icon-arrow" />
+              </p>
+              <div class="sub-menu-container company">
+                <ul class="sub-menu">
+                  <li class="sub-item">History</li>
+                  <li class="sub-item">Our Team</li>
+                  <li class="sub-item">Blog</li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item active">Careers</li>
+            <li class="nav-item active">About</li>
+          </ul>
+        </div>
+
+        <ul class="auth-list">
+          <li class="auth-item">Login</li>
+          <li class="auth-item register-btn">Register</li>
+        </ul>
+
+        <img src="images/icon-menu.svg" class="icon-menu" />
+        <div class="overlay">
+          <div class="mobile-menu">
+            <nav class="menu-nav">
+              <img src="images/icon-close-menu.svg" class="icon-close" />
+            </nav>
+            <ul class="menu-list">
+              <li class="menu-item features">
+                <p class="angle-arrow">
+                  Features
+                  <img src="images/icon-arrow-down.svg" class="icon-arrow" />
+                </p>
+                <div class="sub-menu-container">
+                  <ul class="sub-menu">
+                    <li class="sub-item">
+                      <img src="images/icon-todo.svg" class="sub-icon" /> Todo
+                      List
+                    </li>
+                    <li class="sub-item">
+                      <img src="images/icon-calendar.svg" class="sub-icon" />
+                      Calendar
+                    </li>
+                    <li class="sub-item">
+                      <img src="images/icon-reminders.svg" class="sub-icon" />
+                      Reminders
+                    </li>
+                    <li class="sub-item">
+                      <img src="images/icon-planning.svg" class="sub-icon" />
+                      Planning
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item company">
+                <p class="angle-arrow">
+                  Company
+                  <img src="images/icon-arrow-down.svg" class="icon-arrow" />
+                </p>
+                <div class="sub-menu-container">
+                  <ul class="sub-menu">
+                    <li class="sub-item">History</li>
+                    <li class="sub-item">Our Team</li>
+                    <li class="sub-item">Blog</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item">Careers</li>
+              <li class="menu-item">About</li>
+            </ul>
+
+            <ul class="menu-auth-list">
+              <li class="auth-item">Login</li>
+              <li class="auth-item register-btn">Register</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div class="hero-container">
+          <div class="content">
+            <h1 class="title">Make remote work</h1>
+            <p class="desc">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="btn">Learn more</button>
+          </div>
+
+          <div class="client">
+            <img src="images/client-databiz.svg" class="databiz" />
+            <img src="images/client-audiophile.svg" class="audiophile" />
+            <img src="images/client-meet.svg" class="meet" />
+            <img src="images/client-maker.svg" class="maker" />
+          </div>
+        </div>
+
+        <div class="img-container">
+          <picture>
+            <source
+              srcset="images/image-hero-desktop.png"
+              media="(min-width: 768px)"
+            />
+            <img src="images/image-hero-mobile.png" class="hero-img" />
+          </picture>
+        </div>
+      </div>
+    </header>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/hl-wong">HL Wong</a>.
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
