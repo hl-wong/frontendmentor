@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-wrapper">
+        <div class="left-wrapper">
+          <img src="images/icon-menu.svg" class="icon-menu" />
+          <img src="images/logo.svg" />
+          <ul class="nav-list">
+            <li class="nav-item">Collections</li>
+            <li class="nav-item">Men</li>
+            <li class="nav-item">Women</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Contact</li>
+          </ul>
+        </div>
+        <div class="right-wrapper">
+          <div class="icon-cart-container">
+            <img src="images/icon-cart.svg" class="icon-cart" />
+            <div class="cart-quantity-wrapper">
+              <p class="cart-quantity-value">3</p>
+            </div>
+          </div>
+          <img src="images/image-avatar.png" class="image-avatar" />
+        </div>
+      </div>
+
+      <div class="mobile-overlay">
+        <div class="menu">
+          <img src="images/icon-close.svg" class="icon-close" />
+          <ul class="menu-list">
+            <li class="menu-item">Collections</li>
+            <li class="menu-item">Men</li>
+            <li class="menu-item">Women</li>
+            <li class="menu-item">About</li>
+            <li class="menu-item">Contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cart">
+        <div class="cart-nav">
+          <p>Cart</p>
+        </div>
+        <ul class="cart-list">
+          <div class="cart-empty">
+            <p>Your cart is empty.</p>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="carousel">
+        <div class="carousel-wrapper">
+          <div class="carousel-inner-wrapper">
+            <div class="carousel-slide">
+              <img src="images/image-product-1.jpg" class="image-product" />
+            </div>
+
+            <div class="carousel-slide">
+              <img src="images/image-product-2.jpg" class="image-product" />
+            </div>
+
+            <div class="carousel-slide">
+              <img src="images/image-product-3.jpg" class="image-product" />
+            </div>
+
+            <div class="carousel-slide">
+              <img src="images/image-product-4.jpg" class="image-product" />
+            </div>
+          </div>
+        </div>
+
+        <button class="prev-arrow">
+          <img src="images/icon-previous.svg" />
+        </button>
+
+        <button class="next-arrow">
+          <img src="images/icon-next.svg" />
+        </button>
+
+        <div class="thumbnail">
+          <div class="thumbnail-item active">
+            <img src="images/image-product-1-thumbnail.jpg" />
+          </div>
+
+          <div class="thumbnail-item">
+            <img src="images/image-product-2-thumbnail.jpg" />
+          </div>
+
+          <div class="thumbnail-item">
+            <img src="images/image-product-3-thumbnail.jpg" />
+          </div>
+
+          <div class="thumbnail-item">
+            <img src="images/image-product-4-thumbnail.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <h1>Sneaker Company</h1>
+        <h2 class="product-title">Fall Limited Edition Sneakers</h2>
+        <p class="product-desc">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+
+        <div class="price">
+          <div class="price-wrapper">
+            <h4 class="discounted-price">$125.00</h4>
+            <p class="discount">50%</p>
+          </div>
+
+          <h5 class="actual-price">$250.00</h5>
+        </div>
+
+        <div class="details-wrapper">
+          <div class="quantity">
+            <img src="images/icon-minus.svg" class="icon-minus" />
+            <p class="quantity-value">0</p>
+            <img src="images/icon-plus.svg" class="icon-plus" />
+          </div>
+
+          <button class="add-to-cart">
+            <img src="images/icon-cart.svg" />Add to cart
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/hl-wong">HL Wong</a>.
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
