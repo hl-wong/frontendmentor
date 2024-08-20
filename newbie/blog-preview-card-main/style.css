@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --figtree-font: "Figtree", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--figtree-font);
+  background-color: var(--yellow);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--gray-500);
+  box-shadow: 8px 8px 0 0 var(--gray-950);
+  max-width: 280px;
+}
+
+.image {
+  height: auto;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.category {
+  font-size: 12px;
+  background-color: var(--yellow);
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-top: 24px;
+  font-weight: 800;
+  width: max-content;
+}
+
+.published-date {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.title {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 800;
+  display: block;
+  color: var(--gray-950);
+  text-decoration: none;
+}
+
+.title:active {
+  color: var(--yellow);
+}
+
+.description {
+  font-size: 12px;
+  margin-top: 16px;
+  line-height: 1.5;
+  color: var(--gray-500);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 24px;
+}
+
+.author img {
+  height: auto;
+  width: 100%;
+  display: block;
+  max-width: 30px;
+}
+
+.author h3 {
+  font-weight: 800;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 350px;
+  }
+
+  .category {
+    margin-top: 22px;
+  }
+
+  .published-date {
+    margin-top: 14px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .author h3 {
+    font-size: 14px;
+  }
+}
