@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Outfit:wght@100..900&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+  --outfit-font: "Outfit", sans-serif;
+  --lavender: #cfc3db;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--outfit-font);
+  background-color: var(--lavender);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 1rem;
+  max-width: 280px;
+  box-shadow: 0 8px 30px 4px rgb(0, 0, 0, 10%);
+}
+
+.qr-code {
+  height: auto;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.content {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  color: var(--slate-900);
+}
+
+.description {
+  font-size: 15px;
+  margin-top: 1rem;
+  color: var(--slate-500);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 320px;
+  }
+
+  .content {
+    padding: 0 8px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
