@@ -32,9 +32,9 @@ Users should be able to:
 
 ### Links
 
-- Repository URL : []()
-- Solution URL: []()
-- Live Site URL: []()
+- Repository URL : [https://github.com/hl-wong/frontendmentor/tree/main/newbie/blog-preview-card-main](https://github.com/hl-wong/frontendmentor/tree/main/newbie/blog-preview-card-main)
+- Solution URL: [https://www.frontendmentor.io/solutions/blog-preview-card-6RNPPLYmLL](https://www.frontendmentor.io/solutions/blog-preview-card-6RNPPLYmLL)
+- Live Site URL: [https://hlwong-blog-preview-card.netlify.app/](https://hlwong-blog-preview-card.netlify.app/)
 
 ## My process
 
