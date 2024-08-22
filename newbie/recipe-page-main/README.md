@@ -29,9 +29,9 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Repository URL: [Add repository URL here](https://your-repository-url.com)
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Repository URL: [https://github.com/hl-wong/frontendmentor/tree/main/newbie/recipe-page-main](https://github.com/hl-wong/frontendmentor/tree/main/newbie/recipe-page-main)
+- Solution URL: [https://www.frontendmentor.io/solutions/recipe-page-juskth1_d2](https://www.frontendmentor.io/solutions/recipe-page-juskth1_d2)
+- Live Site URL: [https://hlwong-recipe-page.netlify.app/](https://hlwong-recipe-page.netlify.app/)
 
 ## My process
 
