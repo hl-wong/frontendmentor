@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -12,44 +13,59 @@
     />
 
     <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <img src="assets/images/logo.png" alt="logo" class="img" />
+    <main>
+      <div class="card">
+        <img
+          src="assets/images/Logo-square-black-bg-500px.png"
+          alt="profile-pic"
+          class="profile__img"
+        />
 
-      <h1 class="name">HL Wong</h1>
-      <h2 class="location">Selangor, Malaysia</h2>
+        <h1 class="profile__name">HL Wong</h1>
+        <h2 class="profile__location">Selangor, Malaysia</h2>
+        <p class="profile__occupation">"Student and front-end developer."</p>
 
-      <p class="occupation">"Student and front-end developer"</p>
+        <a target="_blank" class="profile__link">Portfolio (Coming Soon)</a>
+        <a
+          href="https://github.com/hl-wong"
+          target="_blank"
+          class="profile__link"
+          >GitHub</a
+        >
 
-      <a target="_blank" class="link">Portfolio</a>
-      <a href="https://github.com/hl-wong" target="_blank" class="link"
-        >GitHub</a
-      >
-      <a
-        href="https://www.frontendmentor.io/profile/hl-wong"
-        target="_blank"
-        class="link"
-        >Frontend Mentor</a
-      >
-      <a
-        href="https://www.linkedin.com/in/hl-wong/"
-        target="_blank"
-        class="link"
-        >Linkedin</a
-      >
-      <a href="https://twitter.com/hl_wong_01" target="_blank" class="link"
-        >Twitter</a
-      >
-    </div>
+        <a
+          href="https://www.frontendmentor.io/profile/hl-wong"
+          target="_blank"
+          class="profile__link"
+          >Frontend Mentor</a
+        >
 
-    <div class="attribution">
+        <a
+          href="https://www.linkedin.com/in/hl-wong/"
+          target="_blank"
+          class="profile__link"
+          >LinkedIn</a
+        >
+
+        <a
+          href="https://twitter.com/hl_wong_01"
+          target="_blank"
+          class="profile__link"
+          >X</a
+        >
+      </div>
+    </main>
+
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by
-      <a href="https://github.com/hl-wong" target="_blank">HL Wong</a>.
-    </div>
+      >. Coded by <a href="https://github.com/hl-wong">HL Wong</a>.
+    </footer>
   </body>
 </html>
