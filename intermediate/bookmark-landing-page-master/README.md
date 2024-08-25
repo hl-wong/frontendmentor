@@ -46,9 +46,9 @@ Users should be able to:
 
 ### Links
 
-- Repository URL: [Add repository URL here](https://your-repository-url.com)
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Repository URL: [https://github.com/hl-wong/frontendmentor/tree/main/intermediate/bookmark-landing-page-master](https://github.com/hl-wong/frontendmentor/tree/main/intermediate/bookmark-landing-page-master)
+- Solution URL: [https://www.frontendmentor.io/solutions/bookmark-landing-page-8hutqbxS5b](https://www.frontendmentor.io/solutions/bookmark-landing-page-8hutqbxS5b)
+- Live Site URL: [https://hlwong-bookmark-landing-page.netlify.app/](https://hlwong-bookmark-landing-page.netlify.app/)
 
 ## My process
 
