@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --green-lighter: hsl(148, 38%, 91%);
+  --green-medium: hsl(169, 82%, 27%);
+  --red: hsl(0, 66%, 54%);
+  --white: hsl(0, 0%, 100%);
+  --grey-medium: hsl(186, 15%, 59%);
+  --grey-darker: hsl(187, 24%, 22%);
+  --karla-font: "Karla", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--karla-font);
+  background-color: var(--green-lighter);
+  position: relative;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.form {
+  background-color: var(--white);
+  padding: 24px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.form__title {
+  font-size: 24px;
+  color: var(--grey-darker);
+}
+
+.form__fname,
+.form__lname,
+.form__email,
+.form__query,
+.form__message,
+.form__agreement {
+  margin-top: 32px;
+}
+
+label {
+  font-size: 14px;
+}
+
+label[for="fname"]::after,
+label[for="lname"]::after,
+label[for="email"]::after,
+label[for="query-type"]::after,
+label[for="message"]::after,
+label[for="agreement"] p::after {
+  content: " *";
+  letter-spacing: 3px;
+  color: var(--green-medium);
+}
+
+#fname,
+#lname,
+#email {
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid var(--green-lighter);
+  display: block;
+  padding: 12px 20px;
+  width: 100%;
+  margin-top: 10px;
+  font-family: var(--karla-font);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#fname:hover,
+#lname:hover,
+#email:hover,
+#message:hover {
+  border: 1px solid var(--green-medium);
+}
+
+#fname:focus,
+#lname:focus,
+#email:focus,
+#message:focus {
+  outline: none;
+  border: 1px solid var(--green-medium);
+}
+
+.error {
+  color: var(--red);
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+.query__group {
+  margin-top: 1rem;
+}
+
+#general-enquiry,
+#support-request {
+  display: none;
+}
+
+.query__general-enquiry,
+.query__support-request {
+  height: 45px;
+  border: 1px solid var(--green-lighter);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.query__support-request {
+  margin-top: 1rem;
+}
+
+.query__general-enquiry .checkmark,
+.query__support-request .checkmark {
+  height: 18px;
+  width: 18px;
+  border: 1px solid var(--green-lighter);
+  border-radius: 50%;
+  position: relative;
+}
+
+#general-enquiry:checked ~ .query__general-enquiry,
+#support-request:checked ~ .query__support-request {
+  border: 1px solid var(--green-medium);
+  background-color: var(--green-lighter);
+}
+
+#general-enquiry:checked ~ .query__general-enquiry .checkmark,
+#support-request:checked ~ .query__support-request .checkmark {
+  border: 1px solid var(--green-medium);
+}
+
+#general-enquiry:checked ~ .query__general-enquiry .checkmark::after,
+#support-request:checked ~ .query__support-request .checkmark::after {
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background-color: var(--green-medium);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#message {
+  display: block;
+  margin-top: 10px;
+  border: 1px solid var(--green-lighter);
+  width: 100%;
+  height: 200px;
+  font-family: var(--karla-font);
+  font-size: 16px;
+  padding: 12px 20px;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.form__agreement {
+  display: inline-block;
+}
+
+#agreement {
+  display: none;
+}
+
+label[for="agreement"] {
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+label[for="agreement"] .checkmark {
+  height: 16px;
+  width: 20px;
+  border: 1px solid var(--green-lighter);
+  position: relative;
+}
+
+#agreement:checked ~ label[for="agreement"] .checkmark {
+  background-color: var(--green-medium);
+  border: none;
+}
+
+#agreement:checked ~ label[for="agreement"] .checkmark::after {
+  content: "✔";
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+}
+
+.form__submit {
+  margin-top: 32px;
+  height: 50px;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: var(--green-medium);
+  border-radius: 7px;
+  color: var(--white);
+  font-family: var(--karla-font);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: var(--grey-darker);
+}
+
+.success__message {
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  background-color: var(--grey-darker);
+  padding: 24px;
+  color: var(--white);
+  border-radius: 12px;
+  width: 90%;
+  box-shadow: 0 4px 4px 0 var(--green-lighter);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.show {
+  transform: translateY(25%);
+  opacity: 1;
+}
+
+.success__container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.success__title {
+  font-size: 1rem;
+}
+
+.success__desc {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+  label[for="agreement"] .checkmark {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .success__message {
+    width: max-content;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    padding: 32px;
+    max-width: 650px;
+  }
+
+  .form__title {
+    font-size: 28px;
+  }
+
+  .form__name {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .form__fname,
+  .form__lname {
+    flex: 1;
+  }
+
+  .query__group {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .query__general-enquiry,
+  .query__support-request {
+    flex: 1;
+  }
+
+  .query__support-request {
+    margin-top: unset;
+  }
+
+  #message {
+    height: 100px;
+    resize: none;
+  }
+
+  .form__submit {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    max-width: 700px;
+  }
+}
