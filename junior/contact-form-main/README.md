@@ -47,8 +47,8 @@ Users should be able to:
 
 ### Links
 
-- Repository URL: [Add your repository URL here](https://your-repository-url.com)
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Repository URL: [https://github.com/hl-wong/frontendmentor/tree/main/junior/contact-form-main](https://github.com/hl-wong/frontendmentor/tree/main/junior/contact-form-main)
+- Solution URL: [https://www.frontendmentor.io/solutions/contact-form-7BkvcaAIk6](https://www.frontendmentor.io/solutions/contact-form-7BkvcaAIk6)
 - Live Site URL: [https://hlwong-contact-form.netlify.app/](https://hlwong-contact-form.netlify.app/)
 
 ## My process
