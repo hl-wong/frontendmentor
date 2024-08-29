@@ -34,9 +34,9 @@ Users should be able to:
 
 ### Links
 
-- Repository URL: [Add repository URL here](https://your-repository-url.com)
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Repository URL: [https://github.com/hl-wong/frontendmentor/tree/main/newbie/nft-preview-card-component-main](https://github.com/hl-wong/frontendmentor/tree/main/newbie/nft-preview-card-component-main)
+- Solution URL: [https://www.frontendmentor.io/solutions/nft-preview-card-component-using-bem-and-sass-Tkf0GKOQ_J](https://www.frontendmentor.io/solutions/nft-preview-card-component-using-bem-and-sass-Tkf0GKOQ_J)
+- Live Site URL: [https://hlwong-nft-preview-card-component.netlify.app/](https://hlwong-nft-preview-card-component.netlify.app/)
 
 ## My process
 
