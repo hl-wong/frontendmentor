@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", system-ui;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.main {
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  max-width: 350px;
+}
+.main__card__image > img {
+  height: auto;
+  width: 100%;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.main__card__contents {
+  padding: 1.5rem;
+}
+.main__card__contents__category {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 12px;
+  color: hsl(228, 12%, 48%);
+}
+.main__card__contents__title {
+  font-family: "Fraunces", system-ui;
+  line-height: 1;
+  margin-top: 1rem;
+  font-size: clamp(1.5rem, 3.5vw + 1rem, 2rem);
+}
+.main__card__contents__desc {
+  line-height: 1.5;
+  margin-top: 1rem;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+}
+.main__card__contents__pricing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.main__card__contents__pricing__discounted {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", system-ui;
+  font-size: 2rem;
+}
+.main__card__contents__pricing__actual {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: hsl(212, 21%, 14%);
+}
+.main__card__contents__btn {
+  cursor: pointer;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 16px 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-family: "Montserrat", system-ui;
+  font-weight: 600;
+  gap: 12px;
+  margin-top: 1rem;
+}
+.main__card__contents__btn:hover {
+  background-color: hsl(158, 36%, 20%);
+}
+
+@media screen and (min-width: 64em) {
+  .main__card {
+    display: flex;
+    max-width: 580px;
+  }
+  .main__card__image {
+    flex: 1.2;
+  }
+  .main__card__image > img {
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 8px;
+    height: 100%;
+  }
+  .main__card__contents {
+    flex: 1;
+    padding: 2rem;
+  }
+  .main__card__contents__desc {
+    margin-top: 1.5rem;
+  }
+  .main__card__contents__btn {
+    margin-top: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
