@@ -37,9 +37,9 @@ Users should be able to:
 
 ### Links
 
-- Repository URL: [Add repository URL here](https://your-repository-url.com)
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Repository URL: [https://github.com/hl-wong/frontendmentor/tree/main/newbie/four-card-feature-section-master](https://github.com/hl-wong/frontendmentor/tree/main/newbie/four-card-feature-section-master)
+- Solution URL: [https://www.frontendmentor.io/solutions/four-card-feature-section-RwFgGvFjQ3](https://www.frontendmentor.io/solutions/four-card-feature-section-RwFgGvFjQ3)
+- Live Site URL: [https://hlwong-four-card-feature-section.netlify.app/](https://hlwong-four-card-feature-section.netlify.app/)
 
 ## My process
 
