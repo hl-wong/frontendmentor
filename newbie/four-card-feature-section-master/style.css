@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", system-ui;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.main {
+  min-height: 100vh;
+  padding: 5rem 1.5rem;
+}
+.main__header {
+  text-align: center;
+}
+.main__header__title {
+  font-weight: 200;
+  font-size: clamp(1.3rem, 1rem + 1.5vw, 1.8rem);
+}
+.main__header__subtitle {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  font-size: clamp(1.3rem, 1rem + 1.5vw, 1.8rem);
+}
+.main__header__desc {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  line-height: 1.5;
+  margin: 1rem auto;
+  font-size: 14px;
+  max-width: 500px;
+}
+.main__content {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.main__content__cards {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px 0 hsla(212, 86%, 64%, 0.15);
+  max-width: 300px;
+}
+.main__content__cards__border {
+  border: none;
+  height: 4px;
+}
+.main__content__cards__border--cyan {
+  background-color: hsl(180, 62%, 55%);
+}
+.main__content__cards__border--red {
+  background-color: hsl(0, 78%, 62%);
+}
+.main__content__cards__border--orange {
+  background-color: hsl(34, 97%, 64%);
+}
+.main__content__cards__border--blue {
+  background-color: hsl(212, 86%, 64%);
+}
+.main__content__cards__container {
+  padding: 1.5rem;
+}
+.main__content__cards__container__title {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  font-size: 18px;
+}
+.main__content__cards__container__desc {
+  font-weight: 400;
+  line-height: 1.8;
+  color: hsl(229, 6%, 66%);
+  margin-top: 4px;
+  font-size: 12px;
+}
+.main__content__cards__container__icon {
+  height: auto;
+  width: 100%;
+  display: block;
+  max-width: 50px;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 48em) {
+  .main__content {
+    grid-template-columns: 300px 300px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .main__content {
+    grid-template-columns: 300px 300px 300px;
+    grid-template-areas: "supervisor teambuilder calculator" "supervisor karma calculator";
+    align-items: center;
+  }
+  .main__content__cards--supervisor {
+    grid-area: supervisor;
+  }
+  .main__content__cards--tb {
+    grid-area: teambuilder;
+  }
+  .main__content__cards--karma {
+    grid-area: karma;
+  }
+  .main__content__cards--calculator {
+    grid-area: calculator;
+  }
+  .main__content__cards__container__desc {
+    margin-top: 8px;
+  }
+  .main__content__cards__container__icon {
+    margin-top: 2.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

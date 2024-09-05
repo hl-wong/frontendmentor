@@ -1,0 +1,160 @@
+@use "variables";
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variables.$font-poppins;
+  background-color: variables.$clr-very-light-gray;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 5rem 1.5rem;
+
+  &__header {
+    text-align: center;
+
+    &__title {
+      font-weight: 200;
+      font-size: clamp(1.3rem, 1rem + 1.5vw, 1.8rem);
+    }
+
+    &__subtitle {
+      font-weight: 600;
+      color: variables.$clr-very-dark-blue;
+      font-size: clamp(1.3rem, 1rem + 1.5vw, 1.8rem);
+    }
+
+    &__desc {
+      font-weight: 400;
+      color: variables.$clr-grayish-blue;
+      line-height: 1.5;
+      margin: 1rem auto;
+      font-size: 14px;
+      max-width: 500px;
+    }
+  }
+
+  &__content {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+
+    &__cards {
+      background-color: variables.$clr-white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 15px 0 hsl(212, 86%, 64%, 15%);
+      max-width: 300px;
+
+      &__border {
+        border: none;
+        height: 4px;
+
+        &--cyan {
+          background-color: variables.$clr-cyan;
+        }
+
+        &--red {
+          background-color: variables.$clr-red;
+        }
+
+        &--orange {
+          background-color: variables.$clr-orange;
+        }
+
+        &--blue {
+          background-color: variables.$clr-blue;
+        }
+      }
+
+      &__container {
+        padding: 1.5rem;
+
+        &__title {
+          font-weight: 600;
+          color: variables.$clr-very-dark-blue;
+          font-size: 18px;
+        }
+
+        &__desc {
+          font-weight: 400;
+          line-height: 1.8;
+          color: variables.$clr-grayish-blue;
+          margin-top: 4px;
+          font-size: 12px;
+        }
+
+        &__icon {
+          height: auto;
+          width: 100%;
+          display: block;
+          max-width: 50px;
+          margin-left: auto;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .main {
+    &__content {
+      grid-template-columns: 300px 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .main {
+    &__content {
+      grid-template-columns: 300px 300px 300px;
+      grid-template-areas:
+        "supervisor teambuilder calculator"
+        "supervisor karma calculator";
+      align-items: center;
+
+      &__cards {
+        &--supervisor {
+          grid-area: supervisor;
+        }
+
+        &--tb {
+          grid-area: teambuilder;
+        }
+
+        &--karma {
+          grid-area: karma;
+        }
+
+        &--calculator {
+          grid-area: calculator;
+        }
+
+        &__container {
+          &__desc {
+            margin-top: 8px;
+          }
+
+          &__icon {
+            margin-top: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
