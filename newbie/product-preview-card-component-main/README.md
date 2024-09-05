@@ -35,9 +35,9 @@ Users should be able to:
 
 ### Links
 
-- Repository URL: [Add repository URL here](https://your-repository-url.com)
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Repository URL: [https://github.com/hl-wong/frontendmentor/tree/main/newbie/product-preview-card-component-main](https://github.com/hl-wong/frontendmentor/tree/main/newbie/product-preview-card-component-main)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-SSRkH4fi_H](https://www.frontendmentor.io/solutions/product-preview-card-component-SSRkH4fi_H)
+- Live Site URL: [https://hlwong-product-preview-card.netlify.app/](https://hlwong-product-preview-card.netlify.app/)
 
 ## My process
 
