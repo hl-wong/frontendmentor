@@ -28,13 +28,13 @@ body {
 
     &__title {
       font-weight: 200;
-      font-size: clamp(1.3rem, 1rem + 1.5vw, 1.8rem);
+      font-size: clamp(1.3rem, 1rem + 1.5vw, 2rem);
     }
 
     &__subtitle {
       font-weight: 600;
       color: variables.$clr-very-dark-blue;
-      font-size: clamp(1.3rem, 1rem + 1.5vw, 1.8rem);
+      font-size: clamp(1.3rem, 1rem + 1.5vw, 2rem);
     }
 
     &__desc {
@@ -42,7 +42,7 @@ body {
       color: variables.$clr-grayish-blue;
       line-height: 1.5;
       margin: 1rem auto;
-      font-size: 14px;
+      font-size: clamp(14px, 0.5rem + 1.5vw, 16px);
       max-width: 500px;
     }
   }
@@ -111,7 +111,7 @@ body {
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 768px) {
   .main {
     &__content {
       grid-template-columns: 300px 300px;
@@ -119,7 +119,7 @@ body {
   }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 1024px) {
   .main {
     &__content {
       grid-template-columns: 300px 300px 300px;
