@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$clr-moderate-violet: hsl(263, 55%, 52%);
+$clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+$clr-very-dark-blackish-blue: hsl(219, 29%, 14%);
+$clr-white: hsl(0, 0%, 100%);
+$clr-light-gray: hsl(0, 0%, 81%);
+$clr-light-grayish-blue: hsl(210, 46%, 95%);
+$font-barlow-semi-condensed: "Barlow Semi Condensed", sans-serif;
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-barlow-semi-condensed;
+  background-color: $clr-light-grayish-blue;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+
+  &__testimonials {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 4px 10px 10px 0 hsl(0, 0%, 81%, 35%);
+    position: relative;
+
+    &--daniel {
+      background-color: $clr-moderate-violet;
+      z-index: 1;
+    }
+
+    &--jonathan {
+      background-color: $clr-very-dark-grayish-blue;
+    }
+
+    &--jeanette {
+      background-color: $clr-white;
+    }
+
+    &--patrick {
+      background-color: $clr-very-dark-blackish-blue;
+    }
+
+    &--kira {
+      background-color: $clr-white;
+    }
+
+    &__quotation {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      z-index: -1;
+    }
+
+    &__author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &__image {
+        height: auto;
+        width: 100%;
+        display: block;
+        max-width: 30px;
+        border-radius: 50%;
+
+        &--daniel {
+          border: 2px solid $clr-light-gray;
+        }
+
+        &--patrick {
+          border: 2px solid $clr-moderate-violet;
+        }
+      }
+
+      &__container {
+        line-height: 1.5;
+
+        &__name {
+          font-weight: 500;
+          font-size: 12px;
+
+          &--daniel {
+            color: $clr-white;
+          }
+
+          &--jonathan {
+            color: $clr-white;
+          }
+
+          &--jeanette {
+            color: $clr-very-dark-grayish-blue;
+          }
+
+          &--patrick {
+            color: $clr-white;
+          }
+        }
+
+        &__verified {
+          font-weight: 500;
+          color: $clr-light-gray;
+          font-size: 10px;
+        }
+      }
+    }
+
+    &__title {
+      font-weight: 600;
+      margin-top: 1rem;
+
+      &--daniel {
+        color: $clr-white;
+      }
+
+      &--jonathan {
+        color: $clr-white;
+      }
+
+      &--jeanette {
+        color: $clr-very-dark-grayish-blue;
+      }
+
+      &--patrick {
+        color: $clr-white;
+      }
+
+      &--kira {
+        color: $clr-very-dark-blackish-blue;
+      }
+    }
+
+    &__desc {
+      font-size: 12px;
+      line-height: 1.5;
+      margin-top: 1rem;
+
+      &--daniel {
+        color: $clr-light-gray;
+      }
+
+      &--jonathan {
+        color: $clr-light-gray;
+      }
+
+      &--jeanette {
+        color: $clr-very-dark-grayish-blue;
+      }
+
+      &--patrick {
+        color: $clr-light-gray;
+      }
+
+      &--kira {
+        color: $clr-very-dark-grayish-blue;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .main {
+    grid-template-areas:
+      "daniel jonathan"
+      "jeanette patrick"
+      "kira kira";
+    grid-template-columns: 300px 300px;
+    place-content: center;
+
+    &__testimonials {
+      &--daniel {
+        grid-area: daniel;
+      }
+
+      &--jonathan {
+        grid-area: jonathan;
+      }
+
+      &--jeanette {
+        grid-area: jeanette;
+      }
+
+      &--patrick {
+        grid-area: patrick;
+      }
+
+      &--kira {
+        grid-area: kira;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .main {
+    grid-template-columns: 300px 300px 300px;
+    grid-template-areas:
+      "daniel jonathan kira"
+      "jeanette patrick kira";
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .main {
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+    grid-template-columns: 240px 240px 240px 240px;
+    grid-template-rows: 280px 260px;
+
+    &__testimonials {
+      padding: 1.5rem 2rem;
+
+      &__quotation {
+        right: 75px;
+        height: 110px;
+      }
+    }
+  }
+}

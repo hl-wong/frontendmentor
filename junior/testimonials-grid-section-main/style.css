@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+.main__testimonials {
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 4px 10px 10px 0 hsla(0, 0%, 81%, 0.35);
+  position: relative;
+}
+.main__testimonials--daniel {
+  background-color: hsl(263, 55%, 52%);
+  z-index: 1;
+}
+.main__testimonials--jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+.main__testimonials--jeanette {
+  background-color: hsl(0, 0%, 100%);
+}
+.main__testimonials--patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+.main__testimonials--kira {
+  background-color: hsl(0, 0%, 100%);
+}
+.main__testimonials__quotation {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  z-index: -1;
+}
+.main__testimonials__author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main__testimonials__author__image {
+  height: auto;
+  width: 100%;
+  display: block;
+  max-width: 30px;
+  border-radius: 50%;
+}
+.main__testimonials__author__image--daniel {
+  border: 2px solid hsl(0, 0%, 81%);
+}
+.main__testimonials__author__image--patrick {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+.main__testimonials__author__container {
+  line-height: 1.5;
+}
+.main__testimonials__author__container__name {
+  font-weight: 500;
+  font-size: 12px;
+}
+.main__testimonials__author__container__name--daniel {
+  color: hsl(0, 0%, 100%);
+}
+.main__testimonials__author__container__name--jonathan {
+  color: hsl(0, 0%, 100%);
+}
+.main__testimonials__author__container__name--jeanette {
+  color: hsl(217, 19%, 35%);
+}
+.main__testimonials__author__container__name--patrick {
+  color: hsl(0, 0%, 100%);
+}
+.main__testimonials__author__container__verified {
+  font-weight: 500;
+  color: hsl(0, 0%, 81%);
+  font-size: 10px;
+}
+.main__testimonials__title {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.main__testimonials__title--daniel {
+  color: hsl(0, 0%, 100%);
+}
+.main__testimonials__title--jonathan {
+  color: hsl(0, 0%, 100%);
+}
+.main__testimonials__title--jeanette {
+  color: hsl(217, 19%, 35%);
+}
+.main__testimonials__title--patrick {
+  color: hsl(0, 0%, 100%);
+}
+.main__testimonials__title--kira {
+  color: hsl(219, 29%, 14%);
+}
+.main__testimonials__desc {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+.main__testimonials__desc--daniel {
+  color: hsl(0, 0%, 81%);
+}
+.main__testimonials__desc--jonathan {
+  color: hsl(0, 0%, 81%);
+}
+.main__testimonials__desc--jeanette {
+  color: hsl(217, 19%, 35%);
+}
+.main__testimonials__desc--patrick {
+  color: hsl(0, 0%, 81%);
+}
+.main__testimonials__desc--kira {
+  color: hsl(217, 19%, 35%);
+}
+
+@media screen and (min-width: 48em) {
+  .main {
+    grid-template-areas: "daniel jonathan" "jeanette patrick" "kira kira";
+    grid-template-columns: 300px 300px;
+    place-content: center;
+  }
+  .main__testimonials--daniel {
+    grid-area: daniel;
+  }
+  .main__testimonials--jonathan {
+    grid-area: jonathan;
+  }
+  .main__testimonials--jeanette {
+    grid-area: jeanette;
+  }
+  .main__testimonials--patrick {
+    grid-area: patrick;
+  }
+  .main__testimonials--kira {
+    grid-area: kira;
+  }
+}
+@media screen and (min-width: 64em) {
+  .main {
+    grid-template-columns: 300px 300px 300px;
+    grid-template-areas: "daniel jonathan kira" "jeanette patrick kira";
+  }
+}
+@media screen and (min-width: 90em) {
+  .main {
+    grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+    grid-template-columns: 240px 240px 240px 240px;
+    grid-template-rows: 280px 260px;
+  }
+  .main__testimonials {
+    padding: 1.5rem 2rem;
+  }
+  .main__testimonials__quotation {
+    right: 75px;
+    height: 110px;
+  }
+}/*# sourceMappingURL=style.css.map */
