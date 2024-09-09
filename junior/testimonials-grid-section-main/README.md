@@ -32,9 +32,9 @@ Users should be able to:
 
 ### Links
 
-- Repository URL: [Add solution URL here](https://your-repository-url.com)
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Repository URL: [https://github.com/hl-wong/frontendmentor/tree/main/junior/testimonials-grid-section-main](https://github.com/hl-wong/frontendmentor/tree/main/junior/testimonials-grid-section-main)
+- Solution URL: [https://www.frontendmentor.io/solutions/testimonials-grid-section-tz4a6Rayb6](https://www.frontendmentor.io/solutions/testimonials-grid-section-tz4a6Rayb6)
+- Live Site URL: [https://hlwong-testimonials-grid-section.netlify.app/](https://hlwong-testimonials-grid-section.netlify.app/)
 
 ## My process
 
